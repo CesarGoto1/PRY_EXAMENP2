@@ -49,9 +49,9 @@ export class ProductoCard extends LitElement{
         <link rel="stylesheet" href="src/vendor/css/bootstrap.min.css">
         <div class="card col-sm-5 ">
             <h5 class="text-light text-center bg-dark card-header">${this.nombre}</h5>
-            <div class="text-center">
+            
                 <img style="max-width: 500px; max-height: 400px;" src="src/assets/Laptop.png" alt="Laptop">
-            </div>
+            
             <p>Cantidad: ${this.cantidad}</p>
             <label for="precio">Precio Unitario:</label>
             <input type="number" .value=${this.precio} @input=${this.cambioPrecio} min="500">
